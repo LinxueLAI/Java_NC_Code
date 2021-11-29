@@ -16,7 +16,7 @@ public class QuickSort {
         System.out.println("result :");
         for (int value : arr
         ) {
-            System.out.print(value+" ");
+            System.out.print(value + " ");
         }
     }
 
@@ -24,7 +24,6 @@ public class QuickSort {
         middle_swap(arr, 0, arr.length - 1);
     }
 
-    int index = 0;
     private static void middle_swap(int[] arr, int low, int high) {
         int i = low, j = high;
         if (i >= j)
@@ -46,11 +45,12 @@ public class QuickSort {
         swap(arr, low, i);
         for (int value : arr
         ) {
-            System.out.print(value+" ");
+            System.out.print(value + " ");
         }
         System.out.println();
         middle_swap(arr, low, j - 1);
         middle_swap(arr, j + 1, high);
+
     }
 
     private static void swap(int[] arr, int i, int j) {

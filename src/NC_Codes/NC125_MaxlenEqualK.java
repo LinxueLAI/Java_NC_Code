@@ -17,7 +17,6 @@ public class NC125_MaxlenEqualK {
         int result = maxlenEqualK2(a, k);
         System.out.println(result);
     }
-
     private static int maxlenEqualK2(int[] a, int k) {
         if (a.length == 0) return 0;
         HashMap<Integer, Integer> map = new HashMap<>();
