@@ -229,7 +229,7 @@ public class Chapter6_Array {
 
     private static void merge(int[] arrayInitial4, int start, int mid, int end) {
         System.out.println("length =" + arrayInitial4.length);
-        int[] arrayTmp = new int[arrayInitial4.length];
+        int[] arrayTmp = new int[arrayInitial4.length];// 额外空间用了O（N）
 
         int start1 = start, start2 = mid + 1;
         int tmp = start1;
